@@ -1,0 +1,9 @@
+{
+  "id": "translation_flores200_en_vi",
+  "name": "FLORES-200 eng_Latn to vie_Latn devtest (portable)",
+  "component": "translation",
+  "case_count": 1012,
+  "portable": true,
+  "manifest_paths": "relative to this manifest file",
+  "source_manifest": "D:\\VieTrans_Evaluation\\manifests\\translation_flores200_en_vi\\manifest.jsonl"
+}

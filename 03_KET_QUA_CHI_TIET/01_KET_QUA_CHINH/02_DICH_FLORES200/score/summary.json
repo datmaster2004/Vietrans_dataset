@@ -1,0 +1,79 @@
+{
+  "suite": "translation",
+  "generated_at": "2026-07-27T10:04:00.377117+00:00",
+  "case_count": 1012,
+  "prediction_count": 1012,
+  "scored_count": 1012,
+  "coverage": 1.0,
+  "missing_prediction_count": 0,
+  "extra_prediction_count": 0,
+  "error_count": 0,
+  "metrics": {
+    "sentence_bleu": 36.8579970570374,
+    "sentence_chrf": 57.4639621357226,
+    "sentence_chrf_plus_plus": 57.459118082691575,
+    "edit_similarity": 72.77514607679005,
+    "exact_match": 0.0,
+    "terminology_accuracy": null
+  },
+  "corpus_metrics": {
+    "corpus_bleu": 39.18467006187895,
+    "corpus_chrf": 57.5413088914977,
+    "corpus_chrf_plus_plus": 57.51568461034683,
+    "metric_signatures": {
+      "bleu": "nrefs:1|case:mixed|eff:yes|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "chrf_plus_plus": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0"
+    }
+  },
+  "categories": [
+    {
+      "category": "wikibooks",
+      "case_count": 351,
+      "scored_count": 351,
+      "metrics": {
+        "sentence_bleu": 36.91352605290434,
+        "sentence_chrf": 57.257750491367965,
+        "sentence_chrf_plus_plus": 57.33642945248501,
+        "edit_similarity": 72.42536941023364,
+        "exact_match": 0.0,
+        "terminology_accuracy": null
+      }
+    },
+    {
+      "category": "wikinews",
+      "case_count": 341,
+      "scored_count": 341,
+      "metrics": {
+        "sentence_bleu": 37.00952784448246,
+        "sentence_chrf": 58.386041937483334,
+        "sentence_chrf_plus_plus": 58.14927037494151,
+        "edit_similarity": 73.06792311337196,
+        "exact_match": 0.0,
+        "terminology_accuracy": null
+      }
+    },
+    {
+      "category": "wikivoyage",
+      "case_count": 320,
+      "scored_count": 320,
+      "metrics": {
+        "sentence_bleu": 36.63561369432472,
+        "sentence_chrf": 56.70755924437282,
+        "sentence_chrf_plus_plus": 56.85824863752056,
+        "edit_similarity": 72.84681682831152,
+        "exact_match": 0.0,
+        "terminology_accuracy": null
+      }
+    }
+  ],
+  "provenance": {
+    "manifest": "/home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/translation/flores200/inference/selected_manifest.jsonl",
+    "manifest_sha256": "1e88a4f02075838f0ede99a19832e33f5c66b481dca6aae80db5f427fb073782",
+    "predictions": "/home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/translation/flores200/inference/predictions.jsonl",
+    "predictions_sha256": "8f1898d463a5c36658c2a9d1b36364dcbf016739bd99c9f6acf9ea94831e484a",
+    "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:42:22) [GCC 14.3.0]",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.39",
+    "command": "/home/parrot/quangvoquoc/test/VieTrans_TestTools/tools/evaluate.py translation --manifest /home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/translation/flores200/inference/selected_manifest.jsonl --predictions /home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/translation/flores200/inference/predictions.jsonl --output-dir /home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/translation/flores200/score"
+  }
+}

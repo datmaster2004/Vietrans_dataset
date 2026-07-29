@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-07-27T09:22:05.054733+00:00",
+  "mode": "translation",
+  "endpoint": "/eval_translate",
+  "server_url": "http://127.0.0.1:7860",
+  "server_id": "a100-local",
+  "server_build_id": "ddaef3e",
+  "space_url": "http://127.0.0.1:7860",
+  "space_id": "a100-local",
+  "space_sha": null,
+  "case_count": 1500,
+  "prediction_count": 1500,
+  "coverage": 1.0,
+  "error_count_this_invocation": 0,
+  "server_probe": "/home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/translation/iimt30k/inference/server_probe.json",
+  "predictions": "/home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/translation/iimt30k/inference/predictions.jsonl"
+}

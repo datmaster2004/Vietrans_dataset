@@ -1,0 +1,9 @@
+{
+  "id": "ocr_totaltext",
+  "name": "Total-Text official test (portable)",
+  "component": "ocr",
+  "case_count": 300,
+  "portable": true,
+  "manifest_paths": "relative to this manifest file",
+  "source_manifest": "D:\\VieTrans_Evaluation\\manifests\\ocr_totaltext\\manifest.jsonl"
+}

@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-07-28",
+  "source_run": "run_20260727_104539",
+  "server": {
+    "id": "a100-local",
+    "build_id": "ddaef3e",
+    "translation_model": "masterdzzzz/mt-nllb-1p3b-en-vi",
+    "translation_revision": "1ac5819590c0fb3691f1a105f23ad365bf6ff584",
+    "translation_num_beams": 5,
+    "ocr_model": "PP-OCRv5"
+  },
+  "dataset_classification": {
+    "iimt30k": {
+      "role": "in_domain_held_out_test",
+      "basis": "User confirmed train/validation/test splits were created before training.",
+      "publication_requirements": [
+        "Record split seed or split rule.",
+        "Record the test-manifest hash.",
+        "Verify no image, scene, or source-text overlap with train or validation."
+      ]
+    },
+    "flores200": "external",
+    "totaltext": "external",
+    "scut_enstext": "external_real_world"
+  },
+  "coverage": {
+    "translation_flores200": {"cases": 1012, "predictions": 1012, "scored": 1012, "coverage": 1.0},
+    "translation_iimt30k": {"cases": 1500, "predictions": 1500, "scored": 1500, "coverage": 1.0},
+    "ocr_iimt30k": {"cases": 1500, "predictions": 1500, "scored": 1500, "coverage": 1.0},
+    "ocr_totaltext": {"cases": 300, "predictions": 176, "scored": 0, "coverage": 0.5866666666666667, "errors": 124},
+    "inpainting_iimt30k": {"cases": 1500, "predictions": 1500, "scored": 1500, "coverage": 1.0},
+    "inpainting_scut_enstext": {"cases": 813, "predictions": 812, "scored": 812, "coverage": 0.998769987699877, "partial_score": true}
+  },
+  "translation": {
+    "flores200": {"sentence_bleu": 36.8579970570374, "corpus_bleu": 39.18467006187895, "sentence_chrf": 57.4639621357226, "corpus_chrf": 57.5413088914977, "sentence_chrf_plus_plus": 57.459118082691575, "corpus_chrf_plus_plus": 57.51568461034683, "edit_similarity": 72.77514607679005, "exact_match": 0.0},
+    "iimt30k": {"sentence_bleu": 31.722784380699228, "corpus_bleu": 34.00093938220474, "sentence_chrf": 51.725182860011884, "corpus_chrf": 51.8946554332276, "sentence_chrf_plus_plus": 52.075509562580486, "corpus_chrf_plus_plus": 52.20986489961543, "edit_similarity": 71.05041492730615, "exact_match": 1.4}
+  },
+  "ocr": {
+    "iimt30k": {"ocr_cer": 0.03411389732233281, "ocr_wer": 0.051333844409903774, "ocr_accuracy_score": 97.47194360110005, "ocr_exact_match": 75.66666666666667, "detection_precision": 71.55555555555556, "detection_recall": 71.86666666666666, "detection_f1": 71.65555555555555, "matched_region_cer": 0.03282867924245089, "region_recognition_exact_rate": 54.0, "text_spotting_precision": 53.93333333333333, "text_spotting_recall": 54.0, "text_spotting_f1": 53.955555555555556},
+    "totaltext": {"status": "incomplete_no_score", "timeout_errors": 115, "empty_message_errors": 9}
+  },
+  "inpainting": {
+    "iimt30k": {"full_psnr": 20.087049883162933, "full_ssim": 0.644680638273557, "inside_mae": 27.135610306759677, "inside_psnr": 18.157632077587273, "inside_ssim": 0.407103289698561, "inside_similarity_score": 89.35858419342757, "error_reduction_percent": 32.905860106513614, "outside_mae": 0.014639005083590746, "outside_psnr": 98.67626141526306, "outside_ssim": 0.953693412899971, "outside_preservation_score": 99.99425921369271, "boundary_mae": 20.141593129997453, "boundary_ssim": 0.6430086158464352},
+    "scut_enstext_partial": {"scored_cases": 812, "missing_case_id": "inp_scut_img_324", "full_psnr": 34.66713671195246, "full_ssim": 0.9627496857067634, "inside_mae": 11.763711091626455, "inside_psnr": 25.597488461936077, "inside_ssim": 0.754634563503741, "inside_similarity_score": 95.38677996406807, "error_reduction_percent": 66.41503151441087, "outside_mae": 0.05290774786605424, "outside_psnr": 85.63716670690673, "outside_ssim": 0.9947817082622369, "outside_preservation_score": 99.97925186358194, "boundary_mae": 6.3105155214704025, "boundary_ssim": 0.7926457453097029}
+  },
+  "missing_external_benchmarks": ["MASSIVE en-US to vi-VN", "OTR_easy"],
+  "notes": [
+    "SCUT score was recomputed from the original SCUT dataset and the 812 existing inference artifacts; it is partial until the missing case is rerun.",
+    "Do not average translation, OCR, and inpainting metrics into a single headline score."
+  ]
+}

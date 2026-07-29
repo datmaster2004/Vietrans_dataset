@@ -1,0 +1,56 @@
+{
+  "policy_version": "vietrans-eval-2026-07-23",
+  "rules": [
+    "Freeze model revision, code commit, dependencies and decoding before opening any report-only test.",
+    "Never tune thresholds, prompts, checkpoints or post-processing on a final test.",
+    "Score each component independently before running the end-to-end pipeline.",
+    "Publish per-dataset results; do not average unrelated domains into one headline score.",
+    "Every result must include manifest SHA-256, prediction SHA-256 and model/code provenance."
+  ],
+  "benchmarks": [
+    {
+      "id": "ocr_totaltext_test",
+      "component": "ocr",
+      "expected_cases": 300,
+      "role": "secondary_external",
+      "final_report_allowed_if_unused_for_tuning": true,
+      "required_companion": "new manually reviewed VieTrans target-domain OCR holdout"
+    },
+    {
+      "id": "inpainting_scut_enstext_test",
+      "component": "inpainting",
+      "expected_cases": 813,
+      "role": "primary_external_real_world_paired",
+      "final_report_allowed_if_unused_for_training_or_tuning": true
+    },
+    {
+      "id": "inpainting_otr_easy",
+      "component": "inpainting",
+      "expected_cases": 5538,
+      "role": "supplemental_external_paired",
+      "final_report_allowed_if_unused_for_training_or_tuning": true
+    },
+    {
+      "id": "translation_flores200_devtest_en_vi",
+      "component": "translation",
+      "expected_cases": 1012,
+      "role": "primary_external",
+      "final_report_allowed_if_unused_for_tuning": true
+    },
+    {
+      "id": "translation_massive_test_en_vi",
+      "component": "translation",
+      "expected_cases": 2974,
+      "role": "supplemental_external_short_utterance",
+      "final_report_allowed_if_unused_for_tuning": true
+    },
+    {
+      "id": "iimt30k_vi_test",
+      "component": "ocr_translation_and_inpainting",
+      "expected_cases_per_component": 1500,
+      "role": "in_domain_held_out_test",
+      "final_report_allowed_if_unused_for_training_or_tuning": true,
+      "reason": "The IIMT30K original data were split into train/valid/test; this package uses the held-out test split."
+    }
+  ]
+}

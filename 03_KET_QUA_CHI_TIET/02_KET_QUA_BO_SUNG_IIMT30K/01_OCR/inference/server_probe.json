@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-07-27T10:23:28.146167+00:00",
+  "server_url": "http://127.0.0.1:7860",
+  "server_id": "a100-local",
+  "server_build_id": "ddaef3e",
+  "hf_space_id": null,
+  "hf_space_sha": null,
+  "space_url": "http://127.0.0.1:7860",
+  "space_id": "a100-local",
+  "space_sha": null,
+  "endpoints": [
+    "/eval_info",
+    "/eval_inpaint",
+    "/eval_ocr",
+    "/eval_translate",
+    "/lambda",
+    "/translate",
+    "/translate_no_qa",
+    "/translate_stream"
+  ],
+  "component_endpoints_ready": true,
+  "required_component_endpoints": {
+    "ocr": "/eval_ocr",
+    "inpainting": "/eval_inpaint",
+    "translation": "/eval_translate"
+  },
+  "deployed_pipeline_endpoint_ready": true,
+  "server_component_provenance": {
+    "component_api_version": "vietrans-eval-components-v1",
+    "space_id": null,
+    "space_host": null,
+    "space_commit": null,
+    "ocr": {
+      "model": "PP-OCRv5",
+      "min_confidence": 0.5
+    },
+    "translation": {
+      "model_id": "masterdzzzz/mt-nllb-1p3b-en-vi",
+      "model_revision": "1ac5819590c0fb3691f1a105f23ad365bf6ff584",
+      "configured_revision": "1ac5819590c0fb3691f1a105f23ad365bf6ff584",
+      "source_language": "eng_Latn",
+      "target_language": "vie_Latn",
+      "num_beams": 5,
+      "max_new_tokens": 384,
+      "uses_production_glossary_and_postprocessing": true
+    },
+    "inpainting": {
+      "implementation": "inference._inpaint_text",
+      "uses_production_flat_background_and_telea_paths": true
+    }
+  }
+}

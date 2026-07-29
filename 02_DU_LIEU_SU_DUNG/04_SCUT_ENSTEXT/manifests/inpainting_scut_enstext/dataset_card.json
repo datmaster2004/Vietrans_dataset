@@ -1,0 +1,9 @@
+{
+  "id": "inpainting_scut_enstext",
+  "name": "SCUT-EnsText official test (portable)",
+  "component": "inpainting",
+  "case_count": 813,
+  "portable": true,
+  "manifest_paths": "relative to this manifest file",
+  "source_manifest": "D:\\VieTrans_Evaluation\\manifests\\inpainting_scut_enstext\\manifest.jsonl"
+}

@@ -1,0 +1,94 @@
+{
+  "suite": "ocr",
+  "generated_at": "2026-07-28T09:01:24.600306+00:00",
+  "case_count": 300,
+  "prediction_count": 300,
+  "scored_count": 300,
+  "coverage": 1.0,
+  "missing_prediction_count": 0,
+  "extra_prediction_count": 0,
+  "error_count": 0,
+  "metrics": {
+    "ocr_cer": 0.6504512329549722,
+    "ocr_wer": 1.0126968977845499,
+    "ocr_accuracy_score": 40.96858797878779,
+    "ocr_exact_match": 4.333333333333333,
+    "detection_precision": 47.34231556363909,
+    "detection_recall": 35.885008058558505,
+    "detection_f1": 38.75584944873765,
+    "matched_region_cer": 0.16400234259559757,
+    "region_recognition_exact_rate": 53.760747817436624,
+    "text_spotting_precision": 33.76319713133439,
+    "text_spotting_recall": 26.007372736059303,
+    "text_spotting_f1": 27.91494441676667
+  },
+  "corpus_metrics": {},
+  "categories": [
+    {
+      "category": "curved",
+      "case_count": 73,
+      "scored_count": 73,
+      "metrics": {
+        "ocr_cer": 0.6727685814154305,
+        "ocr_wer": 1.1609141373444354,
+        "ocr_accuracy_score": 39.07614501967929,
+        "ocr_exact_match": 6.8493150684931505,
+        "detection_precision": 34.92172211350294,
+        "detection_recall": 27.62624227773301,
+        "detection_f1": 29.292533950068197,
+        "matched_region_cer": 0.07645124716553288,
+        "region_recognition_exact_rate": 31.735159817351597,
+        "text_spotting_precision": 24.22374429223744,
+        "text_spotting_recall": 18.44816008595219,
+        "text_spotting_f1": 19.729486647294866
+      }
+    },
+    {
+      "category": "mixed_orientation",
+      "case_count": 226,
+      "scored_count": 226,
+      "metrics": {
+        "ocr_cer": 0.6419724046157754,
+        "ocr_wer": 0.9619277462059933,
+        "ocr_accuracy_score": 41.73348587256526,
+        "ocr_exact_match": 3.5398230088495577,
+        "detection_precision": 51.437334186878694,
+        "detection_recall": 38.41646046294856,
+        "detection_f1": 41.80707901002795,
+        "matched_region_cer": 0.18090438805448691,
+        "region_recognition_exact_rate": 60.670609197187254,
+        "text_spotting_precision": 36.86749724555555,
+        "text_spotting_recall": 28.26915693750714,
+        "text_spotting_f1": 30.505446016714494
+      }
+    },
+    {
+      "category": "multi_oriented",
+      "case_count": 1,
+      "scored_count": 1,
+      "metrics": {
+        "ocr_cer": 0.9375,
+        "ocr_wer": 1.6666666666666667,
+        "ocr_accuracy_score": 6.25,
+        "ocr_exact_match": 0.0,
+        "detection_precision": 28.57142857142857,
+        "detection_recall": 66.66666666666666,
+        "detection_f1": 40.0,
+        "matched_region_cer": 0.0,
+        "region_recognition_exact_rate": 100.0,
+        "text_spotting_precision": 28.57142857142857,
+        "text_spotting_recall": 66.66666666666666,
+        "text_spotting_f1": 40.0
+      }
+    }
+  ],
+  "provenance": {
+    "manifest": "/home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/ocr/totaltext/inference/selected_manifest.jsonl",
+    "manifest_sha256": "c918f168f9c1929ee4ab5b7bd1328228436d4b814ba61a89deeec0acdbdc5d89",
+    "predictions": "/home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/ocr/totaltext/inference/predictions.jsonl",
+    "predictions_sha256": "de34d27345bce2c4f112d2f341679be7a95b55d5efb50368f5446496895ecd9d",
+    "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:42:22) [GCC 14.3.0]",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.39",
+    "command": "/home/parrot/quangvoquoc/test/VieTrans_TestTools/tools/evaluate.py ocr --manifest /home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/ocr/totaltext/inference/selected_manifest.jsonl --predictions /home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/ocr/totaltext/inference/predictions.jsonl --output-dir /home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/ocr/totaltext/score"
+  }
+}

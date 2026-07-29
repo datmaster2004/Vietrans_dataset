@@ -1,0 +1,12 @@
+{
+  "id": "ocr_iimt30k_en_arial",
+  "name": "IIMT30K_Vi ocr (English subtitle rendering)",
+  "component": "ocr",
+  "case_count": 1500,
+  "role": "in_domain_held_out_test",
+  "split": "test",
+  "split_source": "IIMT30K original dataset split into train/valid/test",
+  "final_report_allowed": true,
+  "source_language": "en",
+  "target_language": null
+}

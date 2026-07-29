@@ -1,0 +1,28 @@
+{
+  "mask_pixel_count": 88083,
+  "region_count": 4,
+  "provenance": {
+    "component_api_version": "vietrans-eval-components-v1",
+    "space_id": null,
+    "space_host": null,
+    "space_commit": null,
+    "ocr": {
+      "model": "PP-OCRv5",
+      "min_confidence": 0.5
+    },
+    "translation": {
+      "model_id": "masterdzzzz/mt-nllb-1p3b-en-vi",
+      "model_revision": "1ac5819590c0fb3691f1a105f23ad365bf6ff584",
+      "configured_revision": "1ac5819590c0fb3691f1a105f23ad365bf6ff584",
+      "source_language": "eng_Latn",
+      "target_language": "vie_Latn",
+      "num_beams": 5,
+      "max_new_tokens": 384,
+      "uses_production_glossary_and_postprocessing": true
+    },
+    "inpainting": {
+      "implementation": "inference._inpaint_text",
+      "uses_production_flat_background_and_telea_paths": true
+    }
+  }
+}

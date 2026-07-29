@@ -1,0 +1,53 @@
+{
+  "suite": "translation",
+  "generated_at": "2026-07-27T09:22:07.285925+00:00",
+  "case_count": 1500,
+  "prediction_count": 1500,
+  "scored_count": 1500,
+  "coverage": 1.0,
+  "missing_prediction_count": 0,
+  "extra_prediction_count": 0,
+  "error_count": 0,
+  "metrics": {
+    "sentence_bleu": 31.722784380699228,
+    "sentence_chrf": 51.725182860011884,
+    "sentence_chrf_plus_plus": 52.075509562580486,
+    "edit_similarity": 71.05041492730615,
+    "exact_match": 1.4,
+    "terminology_accuracy": null
+  },
+  "corpus_metrics": {
+    "corpus_bleu": 34.00093938220474,
+    "corpus_chrf": 51.8946554332276,
+    "corpus_chrf_plus_plus": 52.20986489961543,
+    "metric_signatures": {
+      "bleu": "nrefs:1|case:mixed|eff:yes|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "chrf_plus_plus": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0"
+    }
+  },
+  "categories": [
+    {
+      "category": "synthetic_subtitle",
+      "case_count": 1500,
+      "scored_count": 1500,
+      "metrics": {
+        "sentence_bleu": 31.722784380699228,
+        "sentence_chrf": 51.725182860011884,
+        "sentence_chrf_plus_plus": 52.075509562580486,
+        "edit_similarity": 71.05041492730615,
+        "exact_match": 1.4,
+        "terminology_accuracy": null
+      }
+    }
+  ],
+  "provenance": {
+    "manifest": "/home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/translation/iimt30k/inference/selected_manifest.jsonl",
+    "manifest_sha256": "5866dc407a2d883844753962ca22e8b7b08ed8c814e6efbe15ff758641433887",
+    "predictions": "/home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/translation/iimt30k/inference/predictions.jsonl",
+    "predictions_sha256": "58c52edebf32c761324a9db0e61463584b9d3a025ecbfb8c10a6cce5ad06dbbb",
+    "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:42:22) [GCC 14.3.0]",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.39",
+    "command": "/home/parrot/quangvoquoc/test/VieTrans_TestTools/tools/evaluate.py translation --manifest /home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/translation/iimt30k/inference/selected_manifest.jsonl --predictions /home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/translation/iimt30k/inference/predictions.jsonl --output-dir /home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/translation/iimt30k/score"
+  }
+}

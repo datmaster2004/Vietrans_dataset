@@ -1,0 +1,15 @@
+﻿Vietrans QR evidence package
+Generated: 2026-07-29
+Scope: content files before SHA256SUMS.txt
+
+
+Folder              Files    MiB
+------              -----    ---
+01_TONG_QUAN            3   0.02
+02_DU_LIEU_SU_DUNG  13310 319.29
+03_KET_QUA_CHI_TIET  4940 324.37
+04_TAI_LAP             34   0.27
+05_KIEM_CHUNG           2      0
+
+CONTENT MiB: 643.95
+CONTENT FILES: 18290

@@ -1,0 +1,25 @@
+{
+  "ocr": {
+    "model": "PP-OCRv5",
+    "checkpoint_or_revision": "FILL_ME",
+    "detection_threshold": "FILL_ME",
+    "recognition_config": "FILL_ME"
+  },
+  "inpainting": {
+    "model": "FILL_ME",
+    "checkpoint_or_revision": "FILL_ME",
+    "mask_expansion_pixels": 0,
+    "inference_config": "FILL_ME"
+  },
+  "translation": {
+    "model": "masterdzzzz/mt-nllb-1p3b-en-vi",
+    "checkpoint_or_revision": "1ac5819590c0fb3691f1a105f23ad365bf6ff584",
+    "source_language": "eng_Latn",
+    "target_language": "vie_Latn",
+    "num_beams": "FILL_ME",
+    "max_new_tokens": "FILL_ME"
+  },
+  "code_commit": "FILL_ME",
+  "notes": "Fill every FILL_ME before freezing a report-only run."
+}
+

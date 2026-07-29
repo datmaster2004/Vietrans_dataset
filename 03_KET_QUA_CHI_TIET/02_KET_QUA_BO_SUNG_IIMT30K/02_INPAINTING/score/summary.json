@@ -1,0 +1,58 @@
+{
+  "suite": "inpainting",
+  "generated_at": "2026-07-27T07:50:45.514775+00:00",
+  "case_count": 1500,
+  "prediction_count": 1500,
+  "scored_count": 1500,
+  "coverage": 1.0,
+  "missing_prediction_count": 0,
+  "extra_prediction_count": 0,
+  "error_count": 0,
+  "metrics": {
+    "full_psnr": 20.087049883162933,
+    "full_ssim": 0.644680638273557,
+    "inside_mae": 27.135610306759677,
+    "inside_psnr": 18.157632077587273,
+    "inside_ssim": 0.407103289698561,
+    "inside_similarity_score": 89.35858419342757,
+    "error_reduction_percent": 32.905860106513614,
+    "outside_mae": 0.014639005083590746,
+    "outside_psnr": 98.67626141526306,
+    "outside_ssim": 0.953693412899971,
+    "outside_preservation_score": 99.99425921369271,
+    "boundary_mae": 20.141593129997453,
+    "boundary_ssim": 0.6430086158464352
+  },
+  "corpus_metrics": {},
+  "categories": [
+    {
+      "category": "synthetic_subtitle",
+      "case_count": 1500,
+      "scored_count": 1500,
+      "metrics": {
+        "full_psnr": 20.087049883162933,
+        "full_ssim": 0.644680638273557,
+        "inside_mae": 27.135610306759677,
+        "inside_psnr": 18.157632077587273,
+        "inside_ssim": 0.407103289698561,
+        "inside_similarity_score": 89.35858419342757,
+        "error_reduction_percent": 32.905860106513614,
+        "outside_mae": 0.014639005083590746,
+        "outside_psnr": 98.67626141526306,
+        "outside_ssim": 0.953693412899971,
+        "outside_preservation_score": 99.99425921369271,
+        "boundary_mae": 20.141593129997453,
+        "boundary_ssim": 0.6430086158464352
+      }
+    }
+  ],
+  "provenance": {
+    "manifest": "/home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/inpainting/iimt30k/inference/selected_manifest.jsonl",
+    "manifest_sha256": "2d74eccdfbc2f761a2eddb87653591cf0888c8c4adc5d8242cd5e0aa1d806145",
+    "predictions": "/home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/inpainting/iimt30k/inference/predictions.jsonl",
+    "predictions_sha256": "fad660aca4bbfe01cc12b74d542f7676ef6564c7c48a4b039f2a39b863a9e8ec",
+    "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:42:22) [GCC 14.3.0]",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.39",
+    "command": "/home/parrot/quangvoquoc/test/VieTrans_TestTools/tools/evaluate.py inpainting --manifest /home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/inpainting/iimt30k/inference/selected_manifest.jsonl --predictions /home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/inpainting/iimt30k/inference/predictions.jsonl --output-dir /home/parrot/quangvoquoc/test/results/run_20260727_104539/home/parrot/quangvoquoc/test/.venv-vietrans-app/bin/python/inpainting/iimt30k/score"
+  }
+}

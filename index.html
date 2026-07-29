@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VieTrans - Minh chứng thực nghiệm</title>
+  <style>
+    :root { --ink:#10213b; --blue:#1264a3; --pale:#edf6fc; --line:#d5e1ec; --muted:#54667a; }
+    * { box-sizing:border-box; } body { margin:0; color:var(--ink); background:#f6f9fc; font:16px/1.55 Arial, sans-serif; }
+    main { max-width:980px; margin:0 auto; padding:30px 20px 55px; } header { background:linear-gradient(135deg,#083c69,#1681b8); color:#fff; padding:36px; border-radius:18px; }
+    h1 { margin:0 0 7px; font-size:clamp(28px,5vw,43px); } h2 { margin:34px 0 12px; font-size:25px; } .sub { margin:0; font-size:18px; opacity:.96; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin:20px 0; } .card { border:1px solid var(--line); background:#fff; border-radius:12px; padding:18px; }
+    .card strong { display:block; font-size:25px; color:var(--blue); } table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); } th,td { padding:12px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); } th { background:var(--pale); }
+    a { color:#075d9f; font-weight:700; } .notice { background:#fff3d6; border-left:5px solid #e29e24; padding:15px 18px; border-radius:6px; } .links a { display:inline-block; margin:0 16px 11px 0; }
+    footer { color:var(--muted); margin-top:35px; font-size:14px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>VieTrans - Minh chứng dữ liệu và thực nghiệm</h1>
+    <p class="sub">Tài liệu đồng hành với poster: dataset, chỉ số tổng hợp, kết quả từng mẫu và thông tin tái lập.</p>
+  </header>
+
+  <section class="grid">
+    <div class="card"><strong>300</strong>ảnh Total-Text đã chấm OCR</div>
+    <div class="card"><strong>1.012</strong>câu FLORES-200 đã chấm dịch Anh - Việt</div>
+    <div class="card"><strong>100%</strong>coverage, 0 lỗi ở hai run chính</div>
+  </section>
+
+  <section>
+    <h2>Kết quả chính</h2>
+    <table>
+      <thead><tr><th>Thành phần</th><th>Benchmark</th><th>Chỉ số headline</th></tr></thead>
+      <tbody>
+        <tr><td>OCR</td><td>Total-Text official test, 300 ảnh</td><td>Accuracy 40,97; Detection F1 38,76; Text-spotting F1 27,91</td></tr>
+        <tr><td>Dịch Anh - Việt</td><td>FLORES-200 devtest, 1.012 câu</td><td>Corpus BLEU 39,18; corpus chrF++ 57,52</td></tr>
+        <tr><td>Inpainting</td><td>SCUT-EnsText official test, 812/813 ảnh</td><td>Full PSNR 34,67; inside PSNR 25,60; inside SSIM 0,755. Còn 1 ảnh chưa chạy xong.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Tài liệu trong gói</h2>
+    <p class="links">
+      <a href="01_TONG_QUAN/BAO_CAO_KET_QUA.md">Báo cáo kết quả</a>
+      <a href="02_DU_LIEU_SU_DUNG/">Dữ liệu sử dụng</a>
+      <a href="01_TONG_QUAN/BAO_CAO_KET_QUA.md">Kết quả chi tiết</a>
+      <a href="04_TAI_LAP/README.md">Tái lập</a>
+      <a href="05_KIEM_CHUNG/README.md">Kiểm chứng</a>
+    </p>
+  </section>
+
+ </main>
+</body>
+</html>
