@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>02 - Dữ liệu sử dụng | VieTrans</title>
+  <style>
+    :root { --ink:#10213b; --blue:#1264a3; --pale:#edf6fc; --line:#d5e1ec; --muted:#54667a; }
+    * { box-sizing:border-box; } body { margin:0; color:var(--ink); background:#f6f9fc; font:16px/1.55 Arial, sans-serif; }
+    main { max-width:980px; margin:0 auto; padding:30px 20px 55px; } header { background:linear-gradient(135deg,#083c69,#1681b8); color:#fff; padding:36px; border-radius:18px; }
+    h1 { margin:0 0 7px; font-size:clamp(24px,4vw,36px); } .sub { margin:0; font-size:16px; opacity:.96; }
+    table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); margin-top:20px; border-radius:8px; overflow:hidden; } 
+    th,td { padding:12px 16px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); } th { background:var(--pale); }
+    a { color:#075d9f; font-weight:700; text-decoration:none; } a:hover { text-decoration:underline; }
+    .back { display:inline-block; margin-bottom:15px; }
+  </style>
+</head>
+<body>
+<main>
+  <a href="../index.html" class="back">&larr; Quay lại trang chủ</a>
+  <header>
+    <h1>02 - Dữ liệu sử dụng</h1>
+    <p class="sub">Danh sách các tập dataset trong gói minh chứng VieTrans.</p>
+  </header>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Thư mục Dataset</th>
+        <th>Vai trò</th>
+        <th>Nội dung</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://github.com/datmaster2004/Vietrans_dataset/tree/main/02_DU_LIEU_SU_DUNG/01_IIMT30K" target="_blank">01_IIMT30K/</a></td>
+        <td>Tập test nội miền (OCR, Inpainting, Dịch)</td>
+        <td>3.000 ảnh, 1.500 ảnh clean, mask, annotation, source/reference text</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/datmaster2004/Vietrans_dataset/tree/main/02_DU_LIEU_SU_DUNG/02_TOTALTEXT" target="_blank">02_TOTALTEXT/</a></td>
+        <td>Total-Text test cho OCR</td>
+        <td>300 ảnh test, 300 ground-truth, manifest 300 case</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/datmaster2004/Vietrans_dataset/tree/main/02_DU_LIEU_SU_DUNG/03_FLORES200_EN_VI" target="_blank">03_FLORES200_EN_VI/</a></td>
+        <td>FLORES-200 eng_Latn -> vie_Latn devtest</td>
+        <td>Tệp devtest English/Vietnamese, metadata, manifest 1.012 case</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/datmaster2004/Vietrans_dataset/tree/main/02_DU_LIEU_SU_DUNG/04_SCUT_ENSTEXT" target="_blank">04_SCUT_ENSTEXT/</a></td>
+        <td>SCUT-EnsText test cho Inpainting</td>
+        <td>813 input, 813 clean ground-truth, 813 polygon/mask</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+</body>
+</html>
