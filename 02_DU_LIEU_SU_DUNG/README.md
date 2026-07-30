@@ -4,27 +4,27 @@ Gói chỉ mang theo dữ liệu cần thiết để quan sát và đối chiế
 
 | Thư mục | Dataset và vai trò | Nội dung giữ lại |
 |---|---|---|
-| `01_IIMT30K/` | Tập test nội miền của OCR, inpainting và dịch; tách từ tập gốc theo train/valid/test | 3.000 ảnh, 1.500 ảnh clean, mask, annotation, source/reference text và 3 manifest 1.500 case |
-| `02_TOTALTEXT/` | Total-Text official test cho OCR | 300 ảnh test, 300 ground-truth, manifest 300 case, README và LICENSE gốc |
-| `03_FLORES200_EN_VI/` | FLORES-200 `eng_Latn -> vie_Latn` devtest cho dịch | Hai tệp devtest English/Vietnamese, metadata, manifest 1.012 case và README gốc |
-| `04_SCUT_ENSTEXT/` | SCUT-EnsText official test cho inpainting | 813 input, 813 clean ground-truth, 813 polygon/mask và manifest; lượt chạy hiện có 812/813 output |
+| [`01_IIMT30K/`](./01_IIMT30K/) | Tập test nội miền của OCR, inpainting và dịch; tách từ tập gốc theo train/valid/test | 3.000 ảnh, 1.500 ảnh clean, mask, annotation, source/reference text và 3 manifest 1.500 case |
+| [`02_TOTALTEXT/`](./02_TOTALTEXT/) | Total-Text official test cho OCR | 300 ảnh test, 300 ground-truth, manifest 300 case, README và LICENSE gốc |
+| [`03_FLORES200_EN_VI/`](./03_FLORES200_EN_VI/) | FLORES-200 `eng_Latn -> vie_Latn` devtest cho dịch | Hai tệp devtest English/Vietnamese, metadata, manifest 1.012 case và README gốc |
+| [`04_SCUT_ENSTEXT/`](./04_SCUT_ENSTEXT/) | SCUT-EnsText official test cho inpainting | 813 input, 813 clean ground-truth, 813 polygon/mask và manifest; lượt chạy hiện có 812/813 output |
 
 ## IIMT30K
 
-Ba dataset card trong `01_IIMT30K/manifests/` đều ghi `role: in_domain_held_out_test` và `split: test`. Đây là tập test được tách từ IIMT30K gốc theo train/valid/test; mỗi manifest có 1.500 case. Manifest dùng đường dẫn tương đối; mỗi dòng có `case_id` để nối đến dữ liệu và kết quả.
+Ba dataset card trong [`01_IIMT30K/manifests/`](./01_IIMT30K/manifests/) đều ghi `role: in_domain_held_out_test` và `split: test`. Đây là tập test được tách từ IIMT30K gốc theo train/valid/test; mỗi manifest có 1.500 case. Manifest dùng đường dẫn tương đối; mỗi dòng có `case_id` để nối đến dữ liệu và kết quả.
 
 ## Total-Text
 
-`02_TOTALTEXT/prepared/Images/Test/` chứa 300 ảnh dùng cho OCR; nhãn polygon và text tương ứng nằm trong `prepared/Groundtruth/Test/`. Manifest `manifests/ocr_totaltext/manifest.jsonl` trỏ bằng đường dẫn tương đối đến ảnh và chứa annotation dùng để chấm.
+[`02_TOTALTEXT/prepared/Images/Test/`](./02_TOTALTEXT/prepared/Images/Test/) chứa 300 ảnh dùng cho OCR; nhãn polygon và text tương ứng nằm trong [`02_TOTALTEXT/prepared/Groundtruth/Test/`](./02_TOTALTEXT/prepared/Groundtruth/Test/). Manifest [`02_TOTALTEXT/manifests/ocr_totaltext/manifest.jsonl`](./02_TOTALTEXT/manifests/ocr_totaltext/manifest.jsonl) trỏ bằng đường dẫn tương đối đến ảnh và chứa annotation dùng để chấm.
 
-License và README chính thức được sao chép ở `02_TOTALTEXT/NGUON_VA_LICENCE/`. Khi công bố lại, phải giữ nguyên attribution/license này.
+License và README chính thức được sao chép ở [`02_TOTALTEXT/NGUON_VA_LICENCE/`](./02_TOTALTEXT/NGUON_VA_LICENCE/). Khi công bố lại, phải giữ nguyên attribution/license này.
 
 ## FLORES-200
 
-`03_FLORES200_EN_VI/prepared/devtest/` chứa phần `eng_Latn` và `vie_Latn` theo hàng song song; manifest đã chọn đúng 1.012 case dùng bởi run. Reference trong manifest là bản dịch chuẩn để chấm, không phải bản dịch do hệ thống tạo.
+[`03_FLORES200_EN_VI/prepared/devtest/`](./03_FLORES200_EN_VI/prepared/devtest/) chứa phần `eng_Latn` và `vie_Latn` theo hàng song song; manifest đã chọn đúng 1.012 case dùng bởi run. Reference trong manifest là bản dịch chuẩn để chấm, không phải bản dịch do hệ thống tạo.
 
 ## SCUT-EnsText
 
-`04_SCUT_ENSTEXT/test_set/test/` có 813 ảnh input `all_images`, 813 ảnh clean `all_labels` và polygon `all_gts`; `prepared/masks/` có 813 mask. Kết quả đã phát hiện nằm ở `03_KET_QUA_CHI_TIET/01_KET_QUA_CHINH/03_INPAINTING_SCUT_ENSTEXT_PARTIAL/`: 812 prediction/artifact và 1 lỗi `inp_scut_img_324` vì mask không có pixel được chọn.
+[`04_SCUT_ENSTEXT/test_set/test/`](./04_SCUT_ENSTEXT/test_set/test/) có 813 ảnh input `all_images`, 813 ảnh clean `all_labels` và polygon `all_gts`; [`04_SCUT_ENSTEXT/prepared/masks/`](./04_SCUT_ENSTEXT/prepared/masks/) có 813 mask. Kết quả đã phát hiện nằm ở [`03_KET_QUA_CHI_TIET/01_KET_QUA_CHINH/03_INPAINTING_SCUT_ENSTEXT_PARTIAL/`](../03_KET_QUA_CHI_TIET/01_KET_QUA_CHINH/03_INPAINTING_SCUT_ENSTEXT_PARTIAL/): 812 prediction/artifact và 1 lỗi `inp_scut_img_324` vì mask không có pixel được chọn.
 
-Báo cáo tổng hợp ghi điểm 812/813, nhưng chưa có `score/summary.json` và `per_case.jsonl` cho toàn bộ 813 mẫu. Khi chạy lại được ảnh còn thiếu, cần chấm lại đủ 813/813 để sinh hai tệp này.
+
